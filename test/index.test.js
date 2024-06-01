@@ -1,4 +1,4 @@
-import { getRandomWish, getWishById } from './../index.js';
+import { getRandomWish, getWishById, generateWish } from './../index.js';
 import { readDataFile } from './../fileHelper.js';
 
 const data = readDataFile('wishes.json');
@@ -6,7 +6,7 @@ const wishes = JSON.parse(data).wishes;
 
   describe('getRandomWish', () => {
     it('should return a random wish', () => {
-      const wish = getRandomWish(wishes).wish;
+      const wish = getRandomWish(wishes);
       expect(wish).toBeDefined();
       expect(typeof wish).toBe('object');
 
@@ -29,6 +29,19 @@ const wishes = JSON.parse(data).wishes;
     it('should return a wish by id', () => {
       const wish = getWishById(1);
       expect(wish).toEqual(wishes[0]);
+    });
+  });
+
+  describe('generateWish', () => {
+    it('should return a random wish with the given theme', () => {
+      const wish = generateWish('birthday');
+      expect(wish.theme).toBe('birthday');
+    });
+
+    it('should return a random wish with the given theme and recipient', () => {
+      const wish = generateWish('birthday', 'friends');
+      expect(wish.theme).toBe('birthday');
+      expect(wish.recipient).toBe('friends');
     });
   });
 
