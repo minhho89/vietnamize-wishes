@@ -1,6 +1,6 @@
 {
   "name": "@vietnamize/wishes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates random Vietnamese Greetings (lời chúc) based on different themes such as New Year, birthdays, and more.",
   "main": "index.js",
   "type": "module",
