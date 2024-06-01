@@ -14,7 +14,7 @@ npm install @vietnamize/wishes
 ```
 
 ## Usage
-To use the package, import it into your project and call the `randomWish` function with the desired theme. Here's an example:
+To use the package, import it into your project and call the `getRandomWish` function to generate random wish. Here's an example:
 
 ```javascript
 const { getRandomWish } = require('@vietnamize/wishes');
@@ -22,3 +22,26 @@ const { getRandomWish } = require('@vietnamize/wishes');
 const randomWish = getRandomWish();
 console.log(randomWish);
 ```
+
+Call the `generateWish` function with the desired theme. Here's an example:
+```javascript
+const { generateWish } = require('@vietnamize/wishes');
+const newYearWish = generateWish('newYear');
+console.log(newYearWish);
+
+// You can also specify the recipient of the wish
+const birthdayWish = generateWish('birthday', 'friends');
+```
+
+## Themes
+- `newYear`: New Year greetings
+- `birthday`: Birthday greetings
+- `wedding`: Wedding greetings
+- `graduation`: Graduation greetings
+
+## Recipient
+- `friends`: Greetings for friends
+- `higher_status`: Greetings for people of higher status (elder, boss, etc.)
+- `subordinates`: Greetings for subordinates (children, employees, etc.)
+
+

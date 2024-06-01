@@ -9,7 +9,7 @@ export function getRandomWish() {
     const randomWish = wishes[randomIndex];
 
     // Return the random wish
-    return { wish: randomWish };
+    return randomWish;
 }
 
 export function getWishById(id) {
@@ -20,4 +20,27 @@ export function getWishById(id) {
 
     // Return the wish with the given ID
     return wish;
+}
+
+export function generateWish(theme, recipient) {
+    const data = readDataFile('wishes.json');
+
+    const wishes = JSON.parse(data).wishes;
+    let filteredWishes = wishes.filter(w => w.theme === theme);
+
+    if (recipient) {
+        const recipientWishes = filteredWishes.filter(w => w.recipient === recipient);
+
+        if (recipientWishes.length > 0) {
+            filteredWishes = recipientWishes;
+        }
+    
+    }
+
+    const randomIndex = Math.floor(Math.random() * filteredWishes.length);
+
+    const randomWish = filteredWishes[randomIndex];
+
+    // Return the random wish with the given theme
+    return randomWish;
 }
