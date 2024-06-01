@@ -1,10 +1,7 @@
-import fs from 'fs';
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { readDataFile } from './fileHelper.js';
 
 export function getRandomWish() {
-    const __dirname = dirname(fileURLToPath(import.meta.url));
-    const data = fs.readFileSync(path.join(__dirname,'wishes.json'), 'utf-8');
+    const data = readDataFile('wishes.json');
 
     const wishes = JSON.parse(data).wishes;
     const randomIndex = Math.floor(Math.random() * wishes.length);
