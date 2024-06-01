@@ -1,0 +1,53 @@
+{
+    "wishes": [
+      {
+        "id": 1,
+        "theme": "New Year",
+        "recipient": "friends",
+        "wish": "Chúc mừng năm mới! Chúc bạn và gia đình một năm mới an khang thịnh vượng, vạn sự như ý."
+      },
+      {
+        "id": 2,
+        "theme": "New Year",
+        "recipient": "higher_status",
+        "wish": "Năm mới chúc bạn sức khỏe dồi dào, thành công và hạnh phúc."
+      },
+      {
+        "id": 3,
+        "theme": "Birthday",
+        "recipient": "friends",
+        "wish": "Chúc mừng sinh nhật! Chúc bạn tuổi mới tràn đầy niềm vui và thành công trong cuộc sống."
+      },
+      {
+        "id": 4,
+        "theme": "Birthday",
+        "recipient": "higher_status",
+        "wish": "Sinh nhật vui vẻ! Chúc bạn luôn tươi trẻ, hạnh phúc và đạt được mọi ước mơ."
+      },
+      {
+        "id": 5,
+        "theme": "Wedding",
+        "recipient": "friends",
+        "wish": "Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc, vạn sự viên mãn."
+      },
+      {
+        "id": 6,
+        "theme": "Wedding",
+        "recipient": "higher_status",
+        "wish": "Chúc hai bạn có một cuộc sống hôn nhân đầy ắp yêu thương và niềm vui."
+      },
+      {
+        "id": 7,
+        "theme": "Graduation",
+        "recipient": "subordinates",
+        "wish": "Chúc mừng tốt nghiệp! Chúc bạn thành công trên con đường sự nghiệp và cuộc sống."
+      },
+      {
+        "id": 8,
+        "theme": "Graduation",
+        "recipient": "friends",
+        "wish": "Tốt nghiệp vui vẻ! Chúc bạn luôn gặp may mắn và thành công trên chặng đường mới."
+      }
+    ]
+  }
+  

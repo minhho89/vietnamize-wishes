@@ -1,0 +1,27 @@
+{
+  "name": "@vietnamize/wishes",
+  "version": "1.0.0",
+  "description": "Generates random Vietnamese Greetings (lời chúc) based on different themes such as New Year, birthdays, and more.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhho89/vietnamize-wishes.git"
+  },
+  "keywords": [
+    "vietnamize",
+    "wishes"
+  ],
+  "author": "MinhHo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhho89/vietnamize-wishes/issues"
+  },
+  "homepage": "https://github.com/minhho89/vietnamize-wishes#readme",
+  "dependencies": {
+
+  }
+}
