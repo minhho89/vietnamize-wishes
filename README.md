@@ -14,7 +14,7 @@ npm install @vietnamize/wishes
 ```
 
 ## Usage
-To use the package, import it into your project and call the `generateWish` function with the desired theme. Here's an example:
+To use the package, import it into your project and call the `randomWish` function with the desired theme. Here's an example:
 
 ```javascript
 const { getRandomWish } = require('@vietnamize/wishes');

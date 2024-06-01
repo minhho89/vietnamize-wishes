@@ -1,1 +1,3 @@
 **/*.test.js
+coverageReporters: ["json", "lcov", "text", "clover"]
+coverageDirectory: coverage
