@@ -1,5 +1,5 @@
-import { getRandomWish, getWishById, generateWish } from './../index.js';
-import { readDataFile } from './../fileHelper.js';
+const { getRandomWish, getWishById, generateWish } = require('./../index.js');
+const { readDataFile } = require('./../fileHelper.js');
 
 const data = readDataFile('wishes.json');
 const wishes = JSON.parse(data).wishes;
