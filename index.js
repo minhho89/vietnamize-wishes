@@ -1,6 +1,6 @@
-import { readDataFile } from './fileHelper.js';
+const  { readDataFile } = require('./fileHelper.js'); 
 
-export function getRandomWish() {
+function getRandomWish() {
     const data = readDataFile('wishes.json');
 
     const wishes = JSON.parse(data).wishes;
@@ -12,7 +12,7 @@ export function getRandomWish() {
     return randomWish;
 }
 
-export function getWishById(id) {
+function getWishById(id) {
     const data = readDataFile('wishes.json');
 
     const wishes = JSON.parse(data).wishes;
@@ -22,7 +22,7 @@ export function getWishById(id) {
     return wish;
 }
 
-export function generateWish(theme, recipient) {
+function generateWish(theme, recipient) {
     const data = readDataFile('wishes.json');
 
     const wishes = JSON.parse(data).wishes;
@@ -44,3 +44,5 @@ export function generateWish(theme, recipient) {
     // Return the random wish with the given theme
     return randomWish;
 }
+
+module.exports = { getRandomWish, getWishById, generateWish };

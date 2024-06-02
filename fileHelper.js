@@ -1,9 +1,9 @@
-import fs from 'fs';
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
+const fs = require('fs');
+const path = require('path');
 
-export function readDataFile(filename) {
-    const __dirname = dirname(fileURLToPath(import.meta.url));
+function readDataFile(filename) {
     const data = fs.readFileSync(path.join(__dirname, filename), 'utf-8');
     return data;
 }
+
+module.exports = { readDataFile };
